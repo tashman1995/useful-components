@@ -1,0 +1,41 @@
+// Button reset
+/* setting 1 REM = 1.0rem */
+html {
+  box-sizing: border-box;
+  /* 1rem = 1.0rem */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: $font;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100vw;
+  // transform: rotate(180deg);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+

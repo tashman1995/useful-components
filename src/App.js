@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import "./styles/index.scss";
+import axios from "axios";
+import Container from "./Components/Container";
+
+import PostsList from "./Components/PostsList";
+import Loading from "./Components/Loading";
+
+import Header from "./Components/Header";
 
 function App() {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const refresh = () => {
+    setLoading(true);
+    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
+      setLoading(false);
+      setPosts(res.data);
+    });
+  };
+  // Get posts
+  useEffect(() => {
+    refresh();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container style={{ marginTop: "10vh", marginBottom: "10vh" }}>
+        <Header refresh={refresh} />
+        <Loading loading={loading}>
+          <PostsList posts={posts} />
+        </Loading>
+      </Container>
     </div>
   );
 }

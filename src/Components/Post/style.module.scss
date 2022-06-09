@@ -1,0 +1,15 @@
+
+@import "../../styles/variables.scss";
+
+.post {
+    margin-bottom: 2.8rem;
+    padding-bottom: 2.8rem;
+    border-bottom: 1px solid $color-grey-light;
+    
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+}

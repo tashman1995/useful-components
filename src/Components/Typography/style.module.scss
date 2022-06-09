@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.heading-primary {
+  font-size: $font-large;
+  font-weight: 700;
+  line-height: 1;
+  color: $color-grey-darker;
+}
+
+.heading-secondary {
+  font-size: $font-medium;
+  color: $color-grey-darker;
+  font-weight: 500;
+}
+
+.text,
+.sub-text {
+ 
+  font-weight: 400;
+}
+
+.text {
+  color: $color-grey-darker;
+   font-size: $font-small;
+}
+
+.sub-text {
+  color: $color-grey-medium;
+   font-size: $font-small;
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
+
+// Fonts
+$font: "Montserrat", sans-serif;
+
+// Font Sizes
+
+// Font size used only when forced to use a slightly smaller text, should be avoided as can be hard to read
+$font-extra-small: 1.8rem;
+// Font Size of the smallest elements in components, this is the smallest font size that should be used
+$font-small: 1.8rem;
+$font-small-medium: 2.5rem;
+
+// Font Size of values and more important text in components
+$font-medium: 2.5rem;
+
+// Font Size for page titles
+$font-large: 4rem;
+
+// Colors
+$color-primary-lighter: hsl(200, 100%, 95%);
+$color-primary-light: hsl(200, 100%, 70%);
+$color-primary: hsl(200, 100%, 50%);
+
+$color-primary-dark: #024580;
+
+$color-secondary: #E94B5B;
+
+$color-background: hsl(214, 54%, 89%);
+
+$color-green: hsl(97, 63%, 45%);
+
+$color-yellow: hsl(48, 100%, 70%);
+
+$color-amber: hsl(32, 100%, 47%);
+
+$color-red-light: hsl(0, 100%, 70%);
+$color-red: hsl(0, 100%, 50%);
+$color-red-dark: hsl(0, 100%, 40%);
+
+$color-grey-lightest: hsl(0, 0%, 97%);
+$color-grey-lighter: hsl(0, 0%, 90%);
+// $color-grey-medium: hsl(0, 0%, 50%);
+$color-grey-light: hsl(0, 0%, 75%);
+$color-grey-medium-light: hsl(0, 0%, 60%);
+
+$color-grey-medium: hsl(0, 0%, 40%);
+// $color-grey-dark: hsl(0, 0%, 30%);
+$color-grey-dark: hsl(225, 8%, 42%);
+// $color-grey-darker: hsl(0, 0%, 15%);
+$color-grey-darker: hsl(0, 0%, 10%);
+
+$color-white: #fff;
+
+$border-radius: 2rem;

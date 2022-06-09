@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba($color-grey-darker, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 99;
+  display: flex;
+  padding-top: 10vh;
+  justify-content: center;
+
+  &__close {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    padding: 1.8rem;
+
+    & > svg {
+      height: 3.5rem;
+      width: 3.5rem;
+      color: $color-grey-light;
+    }
+  }
+}

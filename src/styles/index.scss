@@ -1,0 +1,9 @@
+
+// Constants for color, font sizes, border radius'
+@import "./variables.scss";
+
+// Utilities such as centering, quickly adding margins, setting colors, utility classes typically start with "u-<classname>"
+@import "./utilities.scss";
+// Base styles, like setting rem to 10px, border box and resetting buttons
+@import "./base.scss";
+

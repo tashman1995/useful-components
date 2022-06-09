@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+// Reset
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+// Custom styles
+.button {
+  align-items: center;
+  background-color: rgba($color-grey-lighter, 50%);
+  border: 2px solid $color-grey-light;
+  border-radius: $border-radius / 2;
+  color: $color-grey-medium;
+  cursor: pointer;
+  display: flex;
+  font-size: $font-small;
+  justify-content: center;
+  padding: 1.2rem 3.6rem;
+  position: relative;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out,
+    padding 0.1s ease-in-out;
+  // width: max-content;
+
+  &:disabled {
+    opacity: 70%;
+    pointer-events: none;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: rgba($color-grey-light, 50%);
+  }
+
+  &--color {
+    background-color: $color-primary-lighter;
+    border: 2px solid $color-primary;
+    color: $color-primary-dark;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: darken($color-primary-lighter, 5);
+    }
+
+    & .button__icon {
+      fill: $color-primary-dark;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-primary;
+  }
+
+  &__icon {
+    display: inline;
+    fill: $color-grey-medium;
+    height: 2.1rem;
+    margin-right: 1rem;
+  }
+
+  &--loading {
+    padding: 1.2rem 6rem 1.2rem 2.5rem;
+  }
+
+  &__loader {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    margin: 1rem 1.5rem 1rem 1rem;
+  }
+}
